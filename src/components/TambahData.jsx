@@ -75,16 +75,22 @@ export default function TambahSiswa() {
                         <label>Tanggal Lahir</label>
                     </div>
                     <div className="form-floating mb-3">
-                        <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Jurusan"
+                        <select
+                            className="form-select"
                             value={jurusanSiswa}
                             onChange={(e) => setJurusanSiswa(e.target.value)}
                             required
-                        />
+                        >
+                            <option value="" disabled>Pilih Jurusan</option>
+                            <option value="IPA">IPA</option>
+                            <option value="IPS">IPS</option>
+                            <option value="Bahasa">Bahasa</option>
+                            <option value="Teknik">Teknik</option>
+
+                        </select>
                         <label>Jurusan</label>
                     </div>
+
                     <button className="btn btn-primary col-12" disabled={loading}>
                         {loading ? "Menyimpan..." : "Simpan"}
                     </button>
