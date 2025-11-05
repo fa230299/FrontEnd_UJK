@@ -1,2 +1,2 @@
 # FrontEnd_UJK
-FrontEnd untuk UJK Pengembandan Web dengan node.js dan REACT
+FrontEnd untuk UJK Pengembangan Web dengan node.js dan REACT
